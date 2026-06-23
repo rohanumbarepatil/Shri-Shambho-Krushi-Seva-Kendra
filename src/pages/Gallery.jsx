@@ -7,6 +7,10 @@ const Gallery = () => {
     { src: 'exterior_2.png', title: 'श्री शंभो कृषी सेवा केंद्र', category: 'Shop Exterior' },
     { src: 'storefront_1.png', title: 'दुकानाचे प्रवेशद्वार', category: 'Storefront' },
     { src: 'interior_1.png', title: 'उत्पादनांची मांडणी', category: 'Shop Interior' },
+    { src: 'img_1.png', title: 'दुकानातील दृश्य १', category: 'Shop Interior' },
+    { src: 'img_2.png', title: 'दुकानातील दृश्य २', category: 'Shop Interior' },
+    { src: 'img_3.png', title: 'कृषी उत्पादने', category: 'Products' },
+    { src: 'img_4.png', title: 'खते आणि बियाणे', category: 'Products' },
   ];
 
   const fadeUp = {
