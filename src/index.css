@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-yellow: #EAB308;
+  --color-brand-green: #166534;
+  --color-brand-navy: #0B132B;
+  --color-brand-bg: #F8FAFC;
+  --font-marathi: "Mukta", sans-serif;
+  --font-english: "Poppins", sans-serif;
+}
+
+body {
+  font-family: var(--font-english);
+  background-color: var(--color-brand-bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-marathi {
+  font-family: var(--font-marathi);
+}
+
+/* Glassmorphism utility */
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.glass-dark {
+  background: rgba(11, 19, 43, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
