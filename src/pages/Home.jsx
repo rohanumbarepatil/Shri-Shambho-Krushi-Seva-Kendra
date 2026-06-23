@@ -28,7 +28,8 @@ const Home = () => {
       iconBg: 'bg-green-100',
       accentBorder: 'group-hover:border-green-300',
       accentShadow: 'group-hover:shadow-[0_20px_50px_rgba(22,101,52,0.15)]',
-      imgPosition: 'object-[center_20%]'
+      imgPosition: 'object-[center_20%]',
+      bgImg: 'img_4.png'
     },
     {
       id: 'fertilizers',
@@ -40,7 +41,8 @@ const Home = () => {
       iconBg: 'bg-blue-100',
       accentBorder: 'group-hover:border-blue-300',
       accentShadow: 'group-hover:shadow-[0_20px_50px_rgba(37,99,235,0.15)]',
-      imgPosition: 'object-[left_center]'
+      imgPosition: 'object-[left_center]',
+      bgImg: 'img_3.png'
     },
     {
       id: 'pesticides',
@@ -52,7 +54,8 @@ const Home = () => {
       iconBg: 'bg-red-100',
       accentBorder: 'group-hover:border-red-300',
       accentShadow: 'group-hover:shadow-[0_20px_50px_rgba(220,38,38,0.15)]',
-      imgPosition: 'object-[right_bottom]'
+      imgPosition: 'object-[right_bottom]',
+      bgImg: 'img_2.png'
     },
     {
       id: 'medicines',
@@ -64,7 +67,8 @@ const Home = () => {
       iconBg: 'bg-purple-100',
       accentBorder: 'group-hover:border-purple-300',
       accentShadow: 'group-hover:shadow-[0_20px_50px_rgba(147,51,234,0.15)]',
-      imgPosition: 'object-[center_top]'
+      imgPosition: 'object-[center_top]',
+      bgImg: 'img_1.png'
     }
   ];
 
@@ -257,7 +261,7 @@ const Home = () => {
                 {/* Visual Header with authentic cropped interior image background */}
                 <div className={`h-32 ${cat.bgClass} relative overflow-hidden flex items-center justify-center`}>
                   <div className="absolute inset-0 opacity-20 mix-blend-multiply grayscale group-hover:grayscale-0 group-hover:opacity-40 transition-all duration-1000 ease-in-out transform group-hover:scale-110">
-                    <img src="/assets/interior_1.png" alt="Shop Interior Texture" className={`w-full h-full object-cover ${cat.imgPosition}`} loading="lazy" />
+                    <img src={`/assets/${cat.bgImg}`} alt="Shop Interior Texture" className={`w-full h-full object-cover ${cat.imgPosition}`} loading="lazy" />
                   </div>
                   <div className="absolute inset-0 bg-gradient-to-t from-white to-transparent z-0"></div>
                   
