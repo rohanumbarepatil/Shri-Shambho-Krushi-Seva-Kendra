@@ -12,7 +12,7 @@ const SEO = ({ title, description, path = "" }) => {
     "image": `${siteUrl}/assets/exterior_1.png`,
     "@id": fullUrl,
     "url": siteUrl,
-    "telephone": "+91XXXXXXXXXX",
+    "telephone": "+919850011530",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Balaji Nagar",

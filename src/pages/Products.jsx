@@ -185,7 +185,7 @@ const Products = () => {
                     </div>
                   </div>
                   
-                  <a href={`https://wa.me/91XXXXXXXXXX?text=नमस्कार,%20मला%20${cat.title}%20बद्दल%20चौकशी%20करायची%20आहे.`} target="_blank" rel="noopener noreferrer" className="w-full flex items-center justify-center gap-3 bg-[#25D366] text-white py-4 px-6 rounded-xl font-bold font-marathi hover:bg-green-600 shadow-md hover:shadow-xl transition-all duration-300 hover:scale-[1.02] active:scale-95 text-lg">
+                  <a href={`https://wa.me/919850011530?text=नमस्कार,%20मला%20${cat.title}%20बद्दल%20चौकशी%20करायची%20आहे.`} target="_blank" rel="noopener noreferrer" className="w-full flex items-center justify-center gap-3 bg-[#25D366] text-white py-4 px-6 rounded-xl font-bold font-marathi hover:bg-green-600 shadow-md hover:shadow-xl transition-all duration-300 hover:scale-[1.02] active:scale-95 text-lg">
                     <MessageCircle size={24} />
                     WhatsApp वर चौकशी
                   </a>

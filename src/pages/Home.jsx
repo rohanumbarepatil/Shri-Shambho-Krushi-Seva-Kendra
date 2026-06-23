@@ -125,11 +125,11 @@ const Home = () => {
             </motion.p>
             
             <motion.div variants={fadeUp} className="flex flex-col sm:flex-row gap-5">
-              <a href="tel:+91XXXXXXXXXX" className="flex items-center justify-center gap-3 bg-[var(--color-brand-green)] text-white px-8 py-4 rounded-xl font-bold hover:bg-green-700 transition-all duration-300 hover:scale-105 active:scale-95 text-lg font-marathi shadow-[0_8px_30px_rgba(22,101,52,0.6)]">
+              <a href="tel:+919850011530" className="flex items-center justify-center gap-3 bg-[var(--color-brand-green)] text-white px-8 py-4 rounded-xl font-bold hover:bg-green-700 transition-all duration-300 hover:scale-105 active:scale-95 text-lg font-marathi shadow-[0_8px_30px_rgba(22,101,52,0.6)]">
                 <Phone size={24} />
                 आम्हाला कॉल करा
               </a>
-              <a href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-3 bg-white text-green-700 px-8 py-4 rounded-xl font-bold hover:bg-gray-50 transition-all duration-300 hover:scale-105 active:scale-95 text-lg font-marathi shadow-xl">
+              <a href="https://wa.me/919850011530?text=नमस्कार,%20मला%20श्री%20शंभो%20कृषी%20सेवा%20केंद्र%20बद्दल%20माहिती%20हवी%20आहे." target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-3 bg-white text-green-700 px-8 py-4 rounded-xl font-bold hover:bg-gray-50 transition-all duration-300 hover:scale-105 active:scale-95 text-lg font-marathi shadow-xl">
                 <MessageCircle size={24} />
                 WhatsApp वर संपर्क
               </a>
@@ -287,7 +287,7 @@ const Home = () => {
                     </div>
                   </div>
                   
-                  <a href={`https://wa.me/91XXXXXXXXXX?text=नमस्कार,%20मला%20${cat.title}%20बद्दल%20चौकशी%20करायची%20आहे.`} target="_blank" rel="noopener noreferrer" className="w-full flex items-center justify-center gap-2 bg-[#25D366] text-white py-3 px-4 rounded-xl font-bold font-marathi hover:bg-green-600 shadow-sm hover:shadow-lg transition-all duration-300 hover:scale-[1.02] active:scale-95 text-sm">
+                  <a href={`https://wa.me/919850011530?text=नमस्कार,%20मला%20${cat.title}%20बद्दल%20चौकशी%20करायची%20आहे.`} target="_blank" rel="noopener noreferrer" className="w-full flex items-center justify-center gap-2 bg-[#25D366] text-white py-3 px-4 rounded-xl font-bold font-marathi hover:bg-green-600 shadow-sm hover:shadow-lg transition-all duration-300 hover:scale-[1.02] active:scale-95 text-sm">
                     <MessageCircle size={18} />
                     WhatsApp चौकशी
                   </a>

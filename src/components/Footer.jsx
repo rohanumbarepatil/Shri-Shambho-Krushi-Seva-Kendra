@@ -15,12 +15,14 @@ const Footer = () => {
             <p className="text-gray-400 font-marathi mb-4 leading-relaxed">
               तुळजापूर आणि अक्कलकोट परिसरातील शेतकऱ्यांचे विश्वासाचे ठिकाण. दर्जेदार बियाणे, खते आणि कीटकनाशके.
             </p>
-            <div className="flex space-x-4">
-              <a href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener noreferrer" className="bg-green-600 p-2 rounded-full hover:bg-green-500 transition">
-                <MessageCircle size={20} />
+            <div className="flex flex-col space-y-3 mt-6">
+              <a href="tel:+919850011530" className="flex items-center gap-3 hover:text-[var(--color-brand-yellow)] transition text-gray-300 group">
+                <Phone size={20} className="text-[var(--color-brand-yellow)] group-hover:scale-110 transition-transform" />
+                <span className="font-english text-lg tracking-wide">📞 9850011530</span>
               </a>
-              <a href="tel:+91XXXXXXXXXX" className="bg-blue-600 p-2 rounded-full hover:bg-blue-500 transition">
-                <Phone size={20} />
+              <a href="https://wa.me/919850011530?text=नमस्कार,%20मला%20श्री%20शंभो%20कृषी%20सेवा%20केंद्र%20बद्दल%20माहिती%20हवी%20आहे." target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:text-green-400 transition text-gray-300 group">
+                <MessageCircle size={20} className="text-[#25D366] group-hover:scale-110 transition-transform" />
+                <span className="font-english text-lg tracking-wide">💬 WhatsApp: 9850011530</span>
               </a>
             </div>
           </div>
@@ -49,7 +51,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center">
                 <Phone className="text-[var(--color-brand-yellow)] mr-3 shrink-0" size={20} />
-                <span className="text-gray-400 font-marathi">+91 XX XX XX XX XX</span>
+                <a href="tel:+919850011530" className="text-gray-400 hover:text-white font-english text-lg tracking-wide hover:underline">+91 9850011530</a>
               </li>
             </ul>
           </div>

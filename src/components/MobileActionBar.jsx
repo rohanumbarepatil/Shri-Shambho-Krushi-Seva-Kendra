@@ -6,9 +6,9 @@ const MobileActionBar = () => {
       <div className="flex justify-between items-center px-2 py-3">
         {/* Call Now */}
         <a 
-          href="tel:+91XXXXXXXXXX" 
-          aria-label="कॉल करा (Call Us)"
-          className="flex flex-col items-center justify-center w-1/3 text-gray-700 hover:text-[var(--color-brand-green)]"
+          href="tel:+919850011530" 
+          aria-label="कॉल करा (Call Now)"
+          className="flex flex-col items-center justify-center w-1/3 text-[var(--color-brand-green)]"
         >
           <div className="bg-blue-100 p-2 rounded-full mb-1">
             <Phone size={20} className="text-blue-600" />
@@ -18,11 +18,11 @@ const MobileActionBar = () => {
 
         {/* WhatsApp */}
         <a 
-          href="https://wa.me/91XXXXXXXXXX?text=नमस्कार,%20मला%20दुकानातील%20उत्पादनांबद्दल%20माहिती%20हवी%20आहे." 
+          href="https://wa.me/919850011530?text=नमस्कार,%20मला%20श्री%20शंभो%20कृषी%20सेवा%20केंद्र%20बद्दल%20माहिती%20हवी%20आहे." 
           target="_blank" 
-          rel="noopener noreferrer"
-          aria-label="WhatsApp संपर्क (WhatsApp Contact)"
-          className="flex flex-col items-center justify-center w-1/3 text-[var(--color-brand-green)]"
+          rel="noopener noreferrer" 
+          aria-label="WhatsApp"
+          className="flex flex-col items-center justify-center gap-1 text-[var(--color-brand-green)] hover:text-green-800"
         >
           <div className="bg-green-100 p-3 rounded-full mb-1 transform -translate-y-4 shadow-lg border-4 border-white">
             <MessageCircle size={28} className="text-green-600 fill-current" />

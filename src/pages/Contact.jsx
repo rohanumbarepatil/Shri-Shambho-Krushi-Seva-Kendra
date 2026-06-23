@@ -88,13 +88,17 @@ const Contact = () => {
               </div>
 
               <div className="space-y-5">
-                <a href="tel:+91XXXXXXXXXX" className="w-full flex items-center justify-center gap-3 bg-gray-50 text-[#0B132B] py-5 rounded-2xl font-bold font-marathi hover:bg-gray-100 border border-gray-200 transition-all text-xl hover:-translate-y-1">
-                  <Phone size={26} />
-                  कॉल करा
+                <a href="tel:+919850011530" className="w-full flex flex-col items-center justify-center gap-1 bg-gray-50 text-[#0B132B] py-4 rounded-2xl font-bold hover:bg-gray-100 border border-gray-200 transition-all hover:-translate-y-1">
+                  <div className="flex items-center gap-2 text-xl font-marathi">
+                    <Phone size={24} /> मोबाईल
+                  </div>
+                  <span className="font-english text-2xl tracking-wide">9850011530</span>
                 </a>
-                <a href="https://wa.me/91XXXXXXXXXX?text=नमस्कार,%20मला%20माहिती%20हवी%20आहे." target="_blank" rel="noopener noreferrer" className="w-full flex items-center justify-center gap-3 bg-[#25D366] text-white py-5 rounded-2xl font-bold font-marathi hover:bg-green-600 shadow-lg hover:shadow-xl transition-all text-xl hover:-translate-y-1">
-                  <MessageCircle size={26} />
-                  WhatsApp वर मॅसेज करा
+                <a href="https://wa.me/919850011530?text=नमस्कार,%20मला%20श्री%20शंभो%20कृषी%20सेवा%20केंद्र%20बद्दल%20माहिती%20हवी%20आहे." target="_blank" rel="noopener noreferrer" className="w-full flex flex-col items-center justify-center gap-1 bg-[#25D366] text-white py-4 rounded-2xl font-bold hover:bg-green-600 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
+                  <div className="flex items-center gap-2 text-xl font-marathi">
+                    <MessageCircle size={24} /> WhatsApp
+                  </div>
+                  <span className="font-english text-2xl tracking-wide">9850011530</span>
                 </a>
                 <a href="https://maps.app.goo.gl/57vkm8KgyVmpqTQ88" target="_blank" rel="noopener noreferrer" className="w-full flex items-center justify-center gap-3 bg-[var(--color-brand-yellow)] text-[#0B132B] py-5 rounded-2xl font-bold font-marathi hover:bg-yellow-400 shadow-lg hover:shadow-xl transition-all text-xl hover:-translate-y-1">
                   <Navigation size={26} />

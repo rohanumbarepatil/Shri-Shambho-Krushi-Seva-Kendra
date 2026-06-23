@@ -29,9 +29,9 @@ const Navbar = () => {
             <Link to="/gallery" className="text-gray-700 hover:text-[var(--color-brand-green)] font-marathi font-medium">गॅलरी</Link>
             <Link to="/contact" className="text-gray-700 hover:text-[var(--color-brand-green)] font-marathi font-medium">संपर्क</Link>
             
-            <a href="tel:+91XXXXXXXXXX" className="flex items-center gap-2 bg-[var(--color-brand-green)] text-white px-4 py-2 rounded-lg font-bold hover:bg-green-800 transition">
+            <a href="tel:+919850011530" className="flex items-center gap-2 bg-[var(--color-brand-green)] text-white px-4 py-2 rounded-lg font-bold hover:bg-green-800 transition">
               <Phone size={18} />
-              <span>कॉल करा</span>
+              <span className="font-english">9850011530</span>
             </a>
           </div>
 
