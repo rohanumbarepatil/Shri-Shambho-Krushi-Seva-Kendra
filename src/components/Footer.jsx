@@ -18,11 +18,11 @@ const Footer = () => {
             <div className="flex flex-col space-y-3 mt-6">
               <a href="tel:+919850011530" className="flex items-center gap-3 hover:text-[var(--color-brand-yellow)] transition text-gray-300 group">
                 <Phone size={20} className="text-[var(--color-brand-yellow)] group-hover:scale-110 transition-transform" />
-                <span className="font-english text-lg tracking-wide">📞 9850011530</span>
+                <span className="font-english text-lg tracking-wide">9850011530</span>
               </a>
               <a href="https://wa.me/919850011530?text=नमस्कार,%20मला%20श्री%20शंभो%20कृषी%20सेवा%20केंद्र%20बद्दल%20माहिती%20हवी%20आहे." target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:text-green-400 transition text-gray-300 group">
                 <MessageCircle size={20} className="text-[#25D366] group-hover:scale-110 transition-transform" />
-                <span className="font-english text-lg tracking-wide">💬 WhatsApp: 9850011530</span>
+                <span className="font-english text-lg tracking-wide">WhatsApp: 9850011530</span>
               </a>
             </div>
           </div>

@@ -72,14 +72,57 @@ const Home = () => {
     }
   ];
 
-  const brands = [
-    { name: 'UPL', color: 'border-orange-500 text-orange-600', bg: 'bg-orange-50 hover:bg-orange-500 hover:text-white' },
-    { name: 'Bayer', color: 'border-blue-500 text-blue-600', bg: 'bg-blue-50 hover:bg-blue-500 hover:text-white' },
-    { name: 'syngenta', color: 'border-green-600 text-green-700', bg: 'bg-green-50 hover:bg-green-600 hover:text-white' },
-    { name: 'Dhanuka', color: 'border-red-600 text-red-600', bg: 'bg-red-50 hover:bg-red-600 hover:text-white' },
-    { name: 'IFFCO', color: 'border-green-700 text-green-800', bg: 'bg-green-100 hover:bg-green-700 hover:text-white' },
-    { name: 'Coromandel', color: 'border-blue-700 text-blue-800', bg: 'bg-blue-50 hover:bg-blue-700 hover:text-white' },
-    { name: 'Mahyco', color: 'border-yellow-500 text-yellow-700', bg: 'bg-yellow-50 hover:bg-yellow-500 hover:text-white' }
+  const brandCategories = [
+    {
+      id: 'seeds',
+      title: 'बियाणे (Seeds)',
+      subtitle: 'उच्च उत्पादनासाठी दर्जेदार बियाणे',
+      icon: <Sprout className="w-10 h-10 md:w-12 md:h-12 text-green-600" />,
+      iconBg: 'bg-green-100',
+      accentColor: 'text-green-700',
+      companies: [
+        { name: 'छत्रपती संभाजीनगर' },
+        { name: 'Mahabeej Akola' },
+        { name: 'Green Gold MP' }
+      ]
+    },
+    {
+      id: 'fertilizers',
+      title: 'खते (Fertilizers)',
+      subtitle: 'पिकांच्या योग्य पोषणासाठी आणि वाढीसाठी',
+      icon: <Droplets className="w-10 h-10 md:w-12 md:h-12 text-blue-600" />,
+      iconBg: 'bg-blue-100',
+      accentColor: 'text-blue-700',
+      companies: [
+        { name: 'Jai Kisan' },
+        { name: 'Mahadhan' },
+        { name: 'IFFCO' },
+        { name: 'Coromandel' },
+        { name: 'RCF' },
+        { name: 'Chambal' },
+        { name: 'IPL' },
+        { name: 'Kribhco' }
+      ]
+    },
+    {
+      id: 'pesticides',
+      title: 'कीटकनाशके व पीक संरक्षण (Crop Protection)',
+      subtitle: 'रोग आणि किडींपासून पिकांचे संपूर्ण संरक्षण',
+      icon: <ShieldCheck className="w-10 h-10 md:w-12 md:h-12 text-emerald-600" />,
+      iconBg: 'bg-emerald-100',
+      accentColor: 'text-emerald-700',
+      companies: [
+        { name: 'UPL' },
+        { name: 'IFFCO' },
+        { name: 'Dhanuka' },
+        { name: 'Syngenta' },
+        { name: 'Bayer' },
+        { name: 'Indofil' },
+        { name: 'Geolife' },
+        { name: 'Advance Pesticides' },
+        { name: 'Crystal' }
+      ]
+    }
   ];
 
   return (
@@ -303,34 +346,82 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Brands Available */}
-      <section className="py-20 bg-[var(--color-brand-bg)] border-y border-gray-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Premium Brands Section Redesign */}
+      <section 
+        className="py-24 relative overflow-hidden border-y border-gray-100" 
+        style={{ background: 'linear-gradient(180deg, #f8faf8 0%, #ffffff 50%, #f6faf7 100%)' }}
+      >
+        {/* Subtle decorative blur circles */}
+        <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-green-500/5 rounded-full blur-[100px] -translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
+        <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-blue-500/5 rounded-full blur-[120px] translate-y-1/3 translate-x-1/3 pointer-events-none"></div>
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <motion.div 
-            className="text-center mb-16"
+            className="text-center mb-24"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
             variants={fadeUp}
           >
-            <h2 className="text-3xl md:text-5xl font-extrabold font-marathi text-[#0B132B] mb-4">विश्वासातील अग्रगण्य कंपन्यांची उत्पादने</h2>
-            <p className="text-xl text-gray-600 font-marathi max-w-2xl mx-auto">शेतकऱ्यांच्या विश्वासातील दर्जेदार कंपन्यांची उत्पादने</p>
-            <div className="w-24 h-1.5 bg-[var(--color-brand-green)] mx-auto rounded-full mt-8"></div>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold font-marathi text-[#0B132B] mb-6 tracking-tight">
+              विश्वासातील अग्रगण्य कंपन्यांची उत्पादने
+            </h2>
+            <p className="text-xl md:text-2xl text-gray-500 font-marathi max-w-3xl mx-auto leading-relaxed">
+              बियाणे, खते आणि पीक संरक्षणासाठी भारतातील नामांकित कंपन्यांची उत्पादने
+            </p>
           </motion.div>
           
-          <motion.div 
-            className="flex flex-wrap justify-center gap-4 md:gap-6"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={staggerContainer}
-          >
-            {brands.map((brand, idx) => (
-              <motion.div key={idx} variants={fadeUp} className={`px-6 md:px-8 py-4 md:py-6 rounded-2xl border-2 ${brand.color} ${brand.bg} shadow-sm hover:shadow-[0_10px_30px_rgba(0,0,0,0.1)] transition-all duration-300 hover:-translate-y-2 cursor-pointer bg-white group`}>
-                <span className="text-xl md:text-2xl font-black tracking-wider uppercase font-english transition-colors duration-300">{brand.name}</span>
+          <div className="space-y-32">
+            {brandCategories.map((category) => (
+              <motion.div 
+                key={category.id}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, margin: "-50px" }}
+                variants={staggerContainer}
+                className="relative"
+              >
+                {/* Premium Category Header */}
+                <div className="flex flex-col items-center text-center mb-16">
+                  <motion.div 
+                    variants={fadeUp} 
+                    className={`w-20 h-20 md:w-24 md:h-24 rounded-[1.5rem] md:rounded-[2rem] ${category.iconBg} flex items-center justify-center mb-8 shadow-sm border border-white/50 backdrop-blur-md`}
+                  >
+                    {category.icon}
+                  </motion.div>
+                  <motion.h3 
+                    variants={fadeUp} 
+                    className={`text-3xl md:text-4xl font-extrabold font-marathi ${category.accentColor} mb-4`}
+                  >
+                    {category.title}
+                  </motion.h3>
+                  <motion.p 
+                    variants={fadeUp} 
+                    className="text-xl text-gray-500 font-marathi"
+                  >
+                    {category.subtitle}
+                  </motion.p>
+                </div>
+                
+                {/* Premium Brand Cards Grid */}
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 md:gap-8">
+                  {category.companies.map((brand, bIdx) => (
+                    <motion.div 
+                      key={bIdx} 
+                      variants={fadeUp} 
+                      whileHover={{ y: -6, scale: 1.05 }}
+                      transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                      className="bg-white rounded-2xl md:rounded-[20px] p-6 md:p-8 flex items-center justify-center shadow-[0_8px_30px_rgba(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgba(0,0,0,0.08)] border border-gray-100/50 backdrop-blur-sm cursor-pointer group"
+                    >
+                      <span className="text-lg md:text-xl font-bold tracking-wider uppercase text-gray-700 group-hover:text-[#0B132B] transition-colors duration-300 text-center font-english">
+                        {brand.name}
+                      </span>
+                    </motion.div>
+                  ))}
+                </div>
               </motion.div>
             ))}
-          </motion.div>
+          </div>
         </div>
       </section>
 
